@@ -1,0 +1,15 @@
+{
+  "name": "npm",
+  "version": "1.0.0",
+  "description": "portfolio Ephec 2021-2022",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Charlier Francois",
+  "license": "ISC",
+  "dependencies": {
+    "bootstrap-icons": "^1.8.1",
+    "express": "^4.17.2"
+  }
+}
