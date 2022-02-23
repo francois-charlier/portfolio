@@ -102,10 +102,12 @@ function setup() {
 
         btn_open.addEventListener("click", () => {
             modal.classList.add("show");
+            document.documentElement.style.overflow = 'hidden';
         })
 
         btn_close.addEventListener("click", () => {
             modal.classList.remove("show");
+            document.documentElement.style.overflow = 'auto';
         })
     }
 }
