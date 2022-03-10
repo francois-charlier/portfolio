@@ -71,9 +71,7 @@ function setup() {
     }
 
     back_to_top.addEventListener("click", function(i) {
-        let elems = document.querySelectorAll(".nav");
-        elems.forEach(e => e.classList.remove("active"))
-        document.querySelector("a[href='#']").classList.add("active");
+        goTo()
     })
 
     let elems = document.querySelectorAll(".nav");

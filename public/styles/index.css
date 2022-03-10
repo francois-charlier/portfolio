@@ -172,6 +172,10 @@ section {
     margin-left: 15%;
 }
 
+#about ul a {
+    margin-top: 7%;
+}
+
 #about li:nth-last-child(2), #about li:nth-last-child(3) {
     width: 100%;
 }
