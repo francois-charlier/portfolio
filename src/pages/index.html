@@ -21,6 +21,7 @@
             <ul>
                 <li class="contact"><a href="#contact" class="nav"></i><span>Contact</span></a></li>
                 <li class="portfolio"><a href="#portfolio" class="nav"></i><span>Portfolio</span></a></li>
+                <li class="skills"><a href="#skills" class="nav"></i><span>Skills</span></a></li>
                 <li class="about"><a href="#about" class="nav"></i><span>About</span></a></li>
                 <li class="home"><a href="#" class="nav"></i><span>Home</span></a></li>
             </ul>
@@ -42,20 +43,79 @@
         <section id="about">
             <h1 class="section-title">About</h1>
             <div id="about-container">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia,
-                    molestiae quas vel sint commodi repudiandae consequuntur voluptatum laborum
-                    numquam blanditiis harum quisquam eius sed odit fugiat iusto fuga praesentium
-                    optio, eaque rerum! 
+                <p>
+                    Actuellement étudiant en BAC 3 à l'Ephec de Louvain la Neuve en technologie de l'informatique.
+                    Passioné par l'informatique depuis mon plus jeune âge, je suis en permanence à la recherche 
+                    de nouvelle choses à apprendre afin de dévellopper mes connaissances et compétances dans ce 
+                    magnifique domaine.
                 </p>
                 <ul data-columns="2">
-                    <li class="list-info"><i class="bi bi-dot"></i><strong>Name: </strong><span>Charlier</span></li>
-                    <li class="list-info"><i class="bi bi-dot"></i><strong>Lastname: </strong><span>François</span></li>
-                    <li class="list-info"><i class="bi bi-dot"></i><strong>City: </strong><span>Lasne</span></li>
-                    <li class="list-info"><i class="bi bi-dot"></i><strong>School: </strong><span>Ephec</span></li>
-                    <li class="list-info"><i class="bi bi-dot"></i><strong>Birthday: </strong><span>27 March 1999</span></li>
-                    <li class="list-info"><a href="/imgs/logo.png" download><strong>Dowload CV</strong></a></li>
+                    <li class="list-info"><i class="bi bi-dot"></i><strong>Nom: </strong><span>Charlier</span></li>
+                    <li class="list-info"><i class="bi bi-dot"></i><strong>Prénom: </strong><span>François</span></li>
+                    <li class="list-info"><i class="bi bi-dot"></i><strong>Ville: </strong><span>Lasne</span></li>
+                    <li class="list-info"><i class="bi bi-dot"></i><strong>Ecole: </strong><span>Ephec</span></li>
+                    <li class="list-info"><i class="bi bi-dot"></i><strong>Date de naissance: </strong><span>27 March 1999</span></li>
+                    <li class="list-info"><a href="/data/Francois_charlier.pdf" download><strong>Dowload CV</strong></a></li>
                     <img src="/imgs/logo2.png">
                 </ul>
+            </div>
+        </section>
+
+            <!-- Skills section -->
+
+        <section id="skills">
+            <h1 class="section-title">Skills</h1>
+            <div id="skills-container">
+                <div>
+                    <div class="skill">
+                        <p>HTML</p>
+                        <div class="skill-bar">
+                            <div class="skill-html" style="width: 80%;"></div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <p>JS</p>
+                        <div class="skill-bar">
+                            <div class="skill-html" style="width: 85%;"></div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <p>CSS</p>
+                        <div class="skill-bar">
+                            <div class="skill-html" style="width: 80%;"></div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <p>Python</p>
+                        <div class="skill-bar">
+                            <div class="skill-html" style="width: 70%;"></div>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="skill">
+                        <p>Docker</p>
+                        <div class="skill-bar">
+                            <div class="skill-html" style="width: 70%;"></div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="skill">
+                            <p>C</p>
+                            <div class="skill-bar">
+                                <div class="skill-html" style="width: 55%;"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="skill">
+                            <p>SQL</p>
+                            <div class="skill-bar">
+                                <div class="skill-html" style="width: 75%;"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </section>
 
@@ -63,10 +123,16 @@
         <section id="portfolio">
             <h1 class="section-title">Portfolio</h1>
             <table id="table-hours">
+                <col style="width:10%">
+                <col style="width:40%">
+                <col style="width:10%">
+                <col style="width:10%">
+                <col style="width:20%">
                 <thead>
                     <tr>
                         <th class="table-title">Theme</th>
-                        <th>Activité</th>
+                        <th class="table-title">Activité</th>
+                        <th class="table-title">Réel</th>
                         <th class="table-title">Valorisation</th>
                         <th class="table-title">Preuve</th>
                     </tr>
@@ -74,36 +140,35 @@
                 <tbody>
                     <tr>
                         <td>Tutorat</td>
-                        <td>Tutorat de DEV I pour un étudiant de première</td>
+                        <td>Tutorat pour un étudiant de BAC 1</td>
+                        <td>14h</td>
                         <td>10h</td>
                         <td><button class="btn-infos" id="open-modal-1">Informations</button></td>
                     </tr>
                     <tr>
-                        <td>Tutorat</td>
-                        <td>Tutorat de DEV I pour un étudiant de première</td>
+                        <td>Formation</td>
+                        <td>Formation sur OpenClassrooms</td>
+                        <td>13h</td>
                         <td>10h</td>
                         <td><button class="btn-infos" id="open-modal-2">Informations</button></td>
                     </tr>
                     <tr>
-                        <td>Tutorat</td>
-                        <td>Tutorat de DEV I pour un étudiant de première</td>
-                        <td>10h</td>
+                        <td>Information</td>
+                        <td>Présentation cyber security challenge</td>
+                        <td>1h</td>
+                        <td>1h</td>
                         <td><button class="btn-infos" id="open-modal-3">Informations</button></td>
                     </tr>
                     <tr>
-                        <td>Tutorat</td>
-                        <td>Tutorat de DEV I pour un étudiant de première</td>
+                        <td>Hardware</td>
+                        <td>Montage d'un serveur</td>
+                        <td>16h</td>
                         <td>10h</td>
-                        <td><button class="btn-infos">Informations</button></td>
-                    </tr>
-                    <tr>
-                        <td>Tutorat</td>
-                        <td>Tutorat de DEV I pour un étudiant de première</td>
-                        <td>10h</td>
-                        <td><button class="btn-infos">Informations</button></td>
+                        <td><button class="btn-infos" id="open-modal-4">Informations</button></td>
                     </tr>
                     <tr>    
                         <td><strong>Total</strong></td>
+                        <td></td>
                         <td></td>
                         <td><strong>60h</strong></td>
                         <td></td>
@@ -146,11 +211,7 @@
         <!-- Modal 1 -->
         <div class="modal-container" id="modal-1">
             <div class="modals">
-                <h1>Ceci est un modal 1</h1>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ad ipsum, blanditiis rerum commodi
-                    minima pariatur dolores illum quo voluptatem vero. Hic amet nemo nulla, iste accusamus est
-                    ut repellat natus qui maiores nesciunt, ipsa quibusdam. Nihil aspernatur est doloribus corrupti?
-                </p>
+                    <iframe src="/data/tutorat.pdf#toolbar=0" width="100%" height="500px"></iframe>
                 <button id="close-modal-1">Close</button>
             </div>
         </div>
@@ -158,11 +219,11 @@
         <!-- Modal 2 -->
         <div class="modal-container" id="modal-2">
             <div class="modals">
-                <h1>Ceci est un modal 2</h1>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ad ipsum, blanditiis rerum commodi
-                    minima pariatur dolores illum quo voluptatem vero. Hic amet nemo nulla, iste accusamus est
-                    ut repellat natus qui maiores nesciunt, ipsa quibusdam. Nihil aspernatur est doloribus corrupti?
-                </p>
+                <div style="height: 350px; overflow-y: auto; background-color: whitesmoke; padding: 3%;">
+                    <img src="/data/img1.png" width="600px" height="300px" style="margin-bottom: 3%;">
+                    <img src="/data/img2.png" width="600px" height="300px" style="margin-bottom: 3%;">
+                    <img src="/data/img3.png" width="600px" height="300px">
+                </div>
                 <button id="close-modal-2">Close</button>
             </div>
         </div>
@@ -170,15 +231,24 @@
         <!-- Modal 3 -->
         <div class="modal-container" id="modal-3">
             <div class="modals">
-                <h1>Ceci est un modal 3</h1>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ad ipsum, blanditiis rerum commodi
-                    minima pariatur dolores illum quo voluptatem vero. Hic amet nemo nulla, iste accusamus est
-                    ut repellat natus qui maiores nesciunt, ipsa quibusdam. Nihil aspernatur est doloribus corrupti?
-                </p>
+                <div style="height: 350px; overflow-y: auto; background-color: whitesmoke; padding: 3%;">
+                    <img src="/data/cybersecu.png" width="600px" height="300px">
+                </div>
                 <button id="close-modal-3">Close</button>
             </div>
         </div>
 
+        <!-- Modal 4 -->
+        <div class="modal-container" id="modal-4">
+            <div class="modals">
+                <p>Dans le but d'un projet en commun avec un cammarade de classe, 
+                    j'ai participé au montage ainsi qu'à l'installation d'un serveur unRaid.</p>
+                <div style="height: 350px; overflow-y: auto; background-color: whitesmoke; padding: 3%;">
+                    <img src="/data/cybersecu.png" width="600px" height="300px">
+                </div>
+                <button id="close-modal-4">Close</button>
+            </div>
+        </div>
     </main>
 </body>
 </html>

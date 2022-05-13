@@ -101,7 +101,7 @@ a{
 
 #home {
     background-image: url("../imgs/blob-home.png");
-    background-size: auto;
+    background-size: 45%;
     background-repeat: no-repeat;
     background-position-y: 50%;
     background-position-x: 80%;
@@ -127,6 +127,7 @@ section {
     background: #e4c55d;
     bottom: 0;
     left: 0;
+    z-index: -1;
 }
 
 
@@ -199,6 +200,45 @@ section {
 
 #about img {
     float: right;
+}
+
+/* Section Skills */
+
+#skills {
+    width: 80%;
+    height: 70%;
+    margin: auto;
+}
+
+#skills-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    padding: 5%;
+    background-color: whitesmoke;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+    align-items: start;
+}
+
+.skill {
+    box-sizing: border-box;
+    padding-top: 5%;
+}
+
+.skill p {
+    font-size: 1.5em;
+}
+
+.skill-bar {
+    background-color: grey;
+    width: 80%;
+    height: 2vh;
+}
+
+.skill-html {
+    height: inherit;
+    background-color: greenyellow;
 }
 
 /* Section Portfolio */
@@ -289,6 +329,7 @@ section {
     padding: 1% 3%;
     color: white;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    margin-top: 3%;
 }
 
 /* Section Contact */
@@ -327,4 +368,180 @@ section {
 #contact p {
     margin-top: 10%;
     font-size: large;
+}
+
+/* Responsive Tablet */
+
+@media screen  and (min-width: 766px) and (max-width:1200px){
+
+    #home{
+        background-position-x: 95%;
+    }
+
+    #back-to-top {
+        display: none;
+    }
+
+    #navigation {
+        display: none;
+    }
+    #logo {
+        width: 28%;
+        padding-top: 5%;
+        padding-left: 0;
+        position: unset;
+        float: none;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+    header {
+        height: auto;
+        padding-bottom: 3%;
+    }
+
+    #about {
+        padding-bottom: 7%;
+        width: unset;
+    }
+    
+    #skills {
+        padding-bottom: 7%;
+        width: unset;
+    }
+    
+    #portfolio {
+        padding-bottom: 7%;
+        width: unset;
+    }
+
+    section {
+        width: 100%;
+        height: 90vh;
+    }
+
+    #home {
+        margin-top: 10%;
+    }
+
+    section li {
+        font-size: 0.8em;
+    }
+
+    .contact-grid {
+        margin-top: 5%;
+        margin-bottom: 10%;
+    }
+
+    #contact-container {
+        grid-template-columns: none;
+        align-items: unset;
+        gap: 0;
+    }
+
+    #contact p {
+        font-size: 2em;
+    }
+    
+}
+
+/* Responsive Smartphone */
+
+@media screen and (max-device-width:765px) {
+
+    header {
+        height: auto;
+    }
+
+    header img {
+        padding-bottom: 5%;
+    }
+
+    #title-home {
+        text-align: center;
+        font-size: 6.5em;
+        margin-left: 0;
+        padding-top: 23%;
+    }
+
+    #home {
+        background-position-x: 95%;
+        height: 60vh;
+        background-image: none;
+        display: unset;
+    }
+
+    .skill-bar {
+        height: 1vh;
+    }
+
+    #logo {
+        width: 36%;
+        padding-left: 0;
+        position: unset;
+        float: none;
+        padding-top: 5%;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    #navigation {
+        display: none;
+    }
+
+    #about{
+        padding-bottom: 7%;
+        width: unset;
+    }
+
+    #skills {
+        padding-bottom: 7%;
+        width: unset;
+    }
+
+    #portfolio {
+        padding-bottom: 7%;
+        width: unset;
+    }
+
+    #portfolio table {
+        font-size: 1.2em;
+    }
+
+    section li {
+        font-size: 0.8em;
+    }
+
+    section h1{
+        font-size: 3em;
+    }
+
+    section p {
+        font-size: 1.2em;
+    }
+
+    section {
+        width: 100%;
+    }
+
+    #contact-container {
+        grid-template-columns: none;
+        align-items: unset;
+        gap: 0;
+    }
+
+    #contact p {
+        font-size: 2em;
+    }
+
+    .contact-grid {
+        margin-top: 5%;
+        margin-bottom: 10%;
+    }
+
+    #back-to-top {
+        display: none;
+    }
 }
