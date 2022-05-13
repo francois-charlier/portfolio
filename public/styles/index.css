@@ -545,3 +545,20 @@ section {
         display: none;
     }
 }
+
+/* Responsive Grand écran */
+
+@media screen and (min-width: 1650px) {
+
+    #about {
+        height: 90vh;
+    }
+
+    #portfolio {
+        height: 90vh;
+    }
+
+    #contact {
+        margin-bottom: 4%;
+    }
+}
