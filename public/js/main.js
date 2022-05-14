@@ -89,7 +89,7 @@ function setup() {
     })
 
 
-    for (let i = 0; i < 5; i++) {
+    for (let i = 0; i < 7; i++) {
         let str_btn = "open-modal-" + (i + 1);
         let str_modal = "modal-" + (i + 1);
         let str_close = "close-modal-" + (i + 1);
